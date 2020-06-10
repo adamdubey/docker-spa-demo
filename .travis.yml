@@ -8,3 +8,15 @@ before_install:
 script:
   - docker run -e CI=true jigglybytez/docker-spa-demo npm run test -- --coverage
 
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-spa-demo"
+  env: "DockerSpaDemo-env"
+  bucket_name: "elasticbeanstalk-us-east-1-454860603218"
+  bucket_path: "docker-spa-demo"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
