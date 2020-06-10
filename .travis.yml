@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t jigglybytez/docker-spa-demo -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true jigglybytez/docker-spa-demo npm run test -- --coverage
+
