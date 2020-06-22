@@ -7,14 +7,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello, World!</p>
+        <p><strong>Hello, World!</strong></p>
         <p>
-          I'm a React.js App, living in a Docker Container on an AWS EC2/EB
+          I'm a React.js app, living in a Docker Container on an AWS EC2/EB
           instance,
           <br></br>
           which was brought to you by triggering a merge to Master that notified
           <br></br>
-          Travis CI to perform tests and deploy this app to Production.
+          Travis CI to perform tests and if those tests all pass, then deploy this app to Production.
         </p>
         <a
           className="App-link"
@@ -24,6 +24,10 @@ function App() {
         >
           Project Repo
         </a>
+        <br />
+        <p>
+
+        </p>
       </header>
     </div>
   );
