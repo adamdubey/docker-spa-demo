@@ -1,3 +1,9 @@
+# Docker SPA Demo
+
+Demo of a standard CI/CD pipeline featuring React.js, Node.js, Docker, NGINX, Travis CI, & AWS.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
