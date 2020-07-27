@@ -13,7 +13,7 @@ deploy:
   region: "us-east-2"
   app: "docker-spa-demo"
   env: "DockerSpaDemo-env"
-  bucket_name: "elasticbeanstalk-us-east-2-454860603218"
+  bucket_name: "elasticbeanstalk-us-east-2-XXXXXXXXXX"
   bucket_path: "docker-spa-demo"
   on:
     branch: master
